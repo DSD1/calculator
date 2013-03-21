@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num1" />
+
+        <EditText
+            android:id="@+id/num1text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num2" />
+
+        <EditText
+            android:id="@+id/num2text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal" />
+
+        <Button
+            android:id="@+id/calculateplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculateplus"
+            android:text="@string/calcplus" />
+
+        <Button
+            android:id="@+id/calculateminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculateminus"
+            android:text="@string/calcminus" />
+
+        <Button
+            android:id="@+id/calculatemultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculatemultiply"
+            android:text="@string/calcmult" />
+
+        <Button
+            android:id="@+id/calculatedivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculatedivide"
+            android:text="@string/calcdiv" />
+
+        <TextView
+            android:id="@+id/answertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans" />
+       
+    </LinearLayout>
+
+</RelativeLayout>
