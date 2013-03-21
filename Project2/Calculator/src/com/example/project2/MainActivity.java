@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
 			EditText number1text=(EditText)findViewById(R.id.num1text);
 			EditText number2text=(EditText)findViewById(R.id.num2text);
 			Integer num1=Integer.parseInt(number1text.getText().toString()),num2=Integer.parseInt(number2text.getText().toString());
-			Number ans=num1/num2 ;
+			Integer ans=num1/num2 ;
 			
 			TextView answer=(TextView)findViewById(R.id.answertxt);
 			answer.setText("Answer: "+ans.toString());	
